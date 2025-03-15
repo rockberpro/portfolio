@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+:root {
+    --white: #ffffff;
+    --dark1: #282A36;
+    --dark2: #333546;
+    --dark3: #494f63;
+    --dark4: #89a7b1;
+    --dark5: #cbdad5;
+    --dark6: #434657;
+    --cyan1: #8Be9Fd;
+    --teal: #008080
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dark2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dark3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark1);
+    height: 100vh;
+    font-family: 'Roboto';
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: .8rem;
+    background-color: var(--dark6);
+    min-height: 4rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+    justify-content: center; /* horizontal */
+    align-items: center; /* vertical */
+    flex-wrap: wrap;
+}
+
+section {
+    padding: 4rem;
+}
+
+footer  {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+footer > div {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--white);
+    letter-spacing: 6px;
+    font-family: 'Roboto', monospace;
+}
+
+strong {
+    color: var(--teal);
+}
+
+.box-crown-img {
+    height: 1000%;
+}
+
+.crown-img {
+    max-width: 4rem;
+    height: 100%;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav-links:hover {
+    color: var(--dark4);
+    transform: .4s;
+    text-decoration: underline;
+}
+
+.box-btn-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+:is(button,.link-action) {
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.link-action {
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+}
+
+.btn-action {
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white)
+}
+
+.btn-action:hover {
+    background-color: var(--dark3);
+    border: 1px solid var(--dark3);
+}
+
+:is(.presentation-section) {
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 650px;
+}
+
+.presentation-section > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+}
+
+.presentation-section p {
+    color: var(--white)
+}
+
+.crown-img {
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.box-img-main {
+    max-width: 450px;
+    padding: 1rem;
+}
+
+.profile-img {
+    border-radius: 50%;
+}
+
+:is(.cases-section, .projects-section) {
+    background-color: var(--dark2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.cases-section ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: vertical;
+    flex-wrap: wrap;
+}
+
+.cases-section ul li {
+    color: var(--dark4);
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.cases-section ul li:hover  {
+    color: var(--dark5);
+    transition: .4s;
+    cursor: default;
+}
+
+.title {
+    color: var(--dark5);
+}
+
+.about-me-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.about-me-section > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.about-me-section > div img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.about-me-section > div p {
+    max-width: 600px;
+    color: var(--white);
+    text-align: justify;
+}
+
+.links a.github:hover svg {
+    fill: #171515;
+}
+
+.links a.linkedin:hover svg {
+    fill: #0077B5;
+}
+
+#project-list {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-list a {
+    text-decoration: none;
+    color: var(--dark5);
+}
+
+#project-list a:hover {
+    color: var(--dark4);
+    transition: .4s;
+    cursor: pointer;
+}
+
+:is(.profile-img) {
+    box-shadow: 1px 1px 1px 1px var(--teal);
+}
+:is(.profile2-img){
+    box-shadow: 1px 1px 1px 1px var(--teal);
+}
