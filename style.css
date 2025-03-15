@@ -109,7 +109,7 @@ strong {
 }
 
 .nav-links:hover {
-    color: var(--dark4);
+    color: var(--teal);
     transform: .4s;
     text-decoration: underline;
 }
@@ -140,8 +140,8 @@ strong {
 }
 
 .btn-action:hover {
-    background-color: var(--dark3);
-    border: 1px solid var(--dark3);
+    background-color: var(--teal);
+    border: 1px solid var(--teal);
 }
 
 :is(.presentation-section) {
@@ -203,7 +203,7 @@ strong {
 }
 
 .cases-section ul li:hover  {
-    color: var(--dark5);
+    color: var(--teal);
     transition: .4s;
     cursor: default;
 }
