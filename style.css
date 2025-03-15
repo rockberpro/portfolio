@@ -260,7 +260,7 @@ strong {
 }
 
 #project-list a:hover {
-    color: var(--dark4);
+    color: var(--teal);
     transition: .4s;
     cursor: pointer;
 }
