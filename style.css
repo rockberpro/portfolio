@@ -36,8 +36,9 @@
 
 body {
     background-color: var(--dark1);
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'Roboto';
+    overflow-x: hidden;
 }
 
 header {
@@ -270,4 +271,56 @@ strong {
 }
 :is(.profile2-img){
     box-shadow: 1px 1px 1px 1px var(--teal);
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 2rem 1.25rem;
+    }
+
+    footer {
+        padding: 2rem 1.25rem;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+        letter-spacing: 3px;
+        word-break: break-word;
+    }
+
+    .presentation-section {
+        min-height: auto;
+        text-align: center;
+    }
+
+    .presentation-section > div {
+        min-width: 0;
+        align-items: center;
+    }
+
+    .link-action {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .about-me-section > div {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .about-me-section > div img {
+        width: 180px;
+    }
+
+    .about-me-section > div p {
+        text-align: left;
+    }
+
+    .cases-section ul {
+        gap: 1rem;
+    }
+
+    nav {
+        gap: 1.25rem;
+    }
 }
