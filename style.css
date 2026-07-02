@@ -2,14 +2,15 @@
 
 :root {
     --white: #ffffff;
-    --dark1: #282A36;
-    --dark2: #333546;
+    --dark1: #16171f;
+    --dark2: #24262f;
     --dark3: #494f63;
     --dark4: #89a7b1;
     --dark5: #cbdad5;
-    --dark6: #434657;
-    --cyan1: #8Be9Fd;
-    --teal: #008080
+    --dark6: #22232d;
+    --teal: #008080;
+    --teal-bright: #2dd4bf;
+    --teal-title: #7fd4c9
 }
 
 ::-webkit-scrollbar {
@@ -92,7 +93,7 @@ h1 {
 }
 
 strong {
-    color: var(--teal);
+    color: var(--teal-bright);
 }
 
 .box-crown-img {
@@ -110,7 +111,7 @@ strong {
 }
 
 .nav-links:hover {
-    color: var(--teal);
+    color: var(--teal-bright);
     transform: .4s;
     text-decoration: underline;
 }
@@ -204,13 +205,13 @@ strong {
 }
 
 .cases-section ul li:hover  {
-    color: var(--teal);
+    color: var(--teal-bright);
     transition: .4s;
     cursor: default;
 }
 
 .title {
-    color: var(--dark5);
+    color: var(--teal-title);
 }
 
 .about-me-section {
@@ -261,16 +262,16 @@ strong {
 }
 
 #project-list a:hover {
-    color: var(--teal);
+    color: var(--teal-bright);
     transition: .4s;
     cursor: pointer;
 }
 
 :is(.profile-img) {
-    box-shadow: 1px 1px 1px 1px var(--teal);
+    box-shadow: 1px 1px 1px 1px var(--teal-bright);
 }
 :is(.profile2-img){
-    box-shadow: 1px 1px 1px 1px var(--teal);
+    box-shadow: 1px 1px 1px 1px var(--teal-bright);
 }
 
 @media (max-width: 768px) {
